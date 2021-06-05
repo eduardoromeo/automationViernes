@@ -14,7 +14,7 @@ public class Base {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.get("https://the-internet.herokuapp.com/");
-        webDriver.get("$(\"//a[.='Home']\")");
+        
     }
     @AfterMethod
     public void tearDown (){
