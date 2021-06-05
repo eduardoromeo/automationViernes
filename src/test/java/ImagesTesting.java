@@ -1,12 +1,12 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import task.Elements;
 import task.IsUserPageDisplayer;
+import task.User;
 
-public class ElementsTesting extends Base{
+public class ImagesTesting extends Base{
     @Test
-    public void testElements(){
-        Elements.as(webDriver);
+    public void testImages(){
+        User.as(webDriver);
         Assert.assertTrue(IsUserPageDisplayer.form(webDriver));
     }
 }
